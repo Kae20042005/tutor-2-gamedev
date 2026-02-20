@@ -1,13 +1,10 @@
-extends Node2D
+extends RigidBody2D
 
 @export var speed = 500.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("Platform initialized")
-	var label = get_tree().current_scene.get_node("Label")
-	label.text = "Use movement key to move"
-	label.visible = true
+	print("Ship initialized")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

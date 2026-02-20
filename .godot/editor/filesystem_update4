@@ -1,2 +1,8 @@
+res://scenes/meteor.gd
 res://default_env.tres
+res://scenes/SecondLevel.tscn
+res://scenes/meteor.tscn
+res://scenes/ObjectiveArea.gd
+res://scenes/Meteor.gd
+res://scenes/MeteorTrig.gd
 res://scenes/MainLevel.tscn

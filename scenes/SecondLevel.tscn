@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://ml0md1hol1cm"]
+
+[ext_resource type="Texture2D" uid="uid://b0hs7frbx2y0u" path="res://assets/background.jpg" id="1_jll4c"]
+[ext_resource type="Texture2D" uid="uid://dh610bbucs6rh" path="res://assets/fasilkom.png" id="2_dabvo"]
+[ext_resource type="PackedScene" uid="uid://2l8dbfsh07v1" path="res://scenes/GreenShip.tscn" id="2_emdtu"]
+[ext_resource type="Script" uid="uid://cmkajfgwt6fcc" path="res://scenes/GreenShip.gd" id="3_8x1ku"]
+[ext_resource type="Script" uid="uid://x2rdmjyr1ttw" path="res://scenes/ObjectiveArea.gd" id="3_nufku"]
+[ext_resource type="PackedScene" uid="uid://4dcae4gpc0p3" path="res://scenes/SnowPlatform.tscn" id="5_7qf7k"]
+[ext_resource type="PackedScene" uid="uid://b5a4ynav86ee6" path="res://scenes/Meteor.tscn" id="6_7qf7k"]
+[ext_resource type="Script" uid="uid://4bxqjxxv41o8" path="res://scenes/Meteor.gd" id="7_av4th"]
+[ext_resource type="Script" uid="uid://b4ndft3mjvvt8" path="res://scenes/MeteorTrig.gd" id="8_crcml"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8x1ku"]
+size = Vector2(148.4375, 133.625)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jsrw5"]
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_nufku"]
+a = Vector2(-2, 659)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_dabvo"]
+a = Vector2(1160, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_av4th"]
+size = Vector2(93, 68.5)
+
+[node name="SecondLevel" type="Node" unique_id=1479856196]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2145041429]
+position = Vector2(563, 452)
+scale = Vector2(4.377063, 4.1170454)
+texture = ExtResource("1_jll4c")
+
+[node name="ObjectiveArea" type="Area2D" parent="." unique_id=1431645972]
+position = Vector2(1, 0)
+script = ExtResource("3_nufku")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectiveArea" unique_id=1253875968]
+position = Vector2(1058, 93)
+shape = SubResource("RectangleShape2D_8x1ku")
+
+[node name="Sprite2D" type="Sprite2D" parent="ObjectiveArea" unique_id=1951780601]
+position = Vector2(1061, 91)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_dabvo")
+
+[node name="GreenShip" parent="." unique_id=1301290648 instance=ExtResource("2_emdtu")]
+position = Vector2(86, 555)
+script = ExtResource("3_8x1ku")
+
+[node name="Platform" type="Node2D" parent="." unique_id=85637771]
+
+[node name="SnowPlatform" parent="Platform" unique_id=621159767 instance=ExtResource("5_7qf7k")]
+position = Vector2(254, 420)
+
+[node name="SnowPlatform2" parent="Platform" unique_id=1963879414 instance=ExtResource("5_7qf7k")]
+position = Vector2(327, 420)
+
+[node name="SnowPlatform3" parent="Platform" unique_id=623920532 instance=ExtResource("5_7qf7k")]
+position = Vector2(109, 420)
+
+[node name="SnowPlatform5" parent="Platform" unique_id=589778669 instance=ExtResource("5_7qf7k")]
+position = Vector2(37, 420)
+
+[node name="SnowPlatform4" parent="Platform" unique_id=595544723 instance=ExtResource("5_7qf7k")]
+position = Vector2(182, 420)
+
+[node name="SnowPlatform6" parent="Platform" unique_id=1247846701 instance=ExtResource("5_7qf7k")]
+position = Vector2(400, 420)
+
+[node name="SnowPlatform7" parent="Platform" unique_id=1687747785 instance=ExtResource("5_7qf7k")]
+position = Vector2(692, 420)
+
+[node name="SnowPlatform12" parent="Platform" unique_id=1336926461 instance=ExtResource("5_7qf7k")]
+position = Vector2(911, 420)
+
+[node name="SnowPlatform13" parent="Platform" unique_id=1573220022 instance=ExtResource("5_7qf7k")]
+position = Vector2(838, 420)
+
+[node name="SnowPlatform14" parent="Platform" unique_id=825331222 instance=ExtResource("5_7qf7k")]
+position = Vector2(765, 420)
+
+[node name="SnowPlatform8" parent="Platform" unique_id=1291876781 instance=ExtResource("5_7qf7k")]
+position = Vector2(619, 420)
+
+[node name="SnowPlatform9" parent="Platform" unique_id=1342427973 instance=ExtResource("5_7qf7k")]
+position = Vector2(546, 420)
+
+[node name="SnowPlatform10" parent="Platform" unique_id=1092744059 instance=ExtResource("5_7qf7k")]
+position = Vector2(473, 420)
+
+[node name="SnowPlatform11" parent="Platform" unique_id=604106451 instance=ExtResource("5_7qf7k")]
+position = Vector2(459, 218)
+
+[node name="SnowPlatform15" parent="Platform" unique_id=1362342536 instance=ExtResource("5_7qf7k")]
+position = Vector2(532, 218)
+
+[node name="SnowPlatform16" parent="Platform" unique_id=717095585 instance=ExtResource("5_7qf7k")]
+position = Vector2(314, 218)
+
+[node name="SnowPlatform17" parent="Platform" unique_id=651446750 instance=ExtResource("5_7qf7k")]
+position = Vector2(242, 218)
+
+[node name="SnowPlatform18" parent="Platform" unique_id=1222795949 instance=ExtResource("5_7qf7k")]
+position = Vector2(387, 218)
+
+[node name="SnowPlatform19" parent="Platform" unique_id=1081365972 instance=ExtResource("5_7qf7k")]
+position = Vector2(605, 218)
+
+[node name="SnowPlatform20" parent="Platform" unique_id=1243334826 instance=ExtResource("5_7qf7k")]
+position = Vector2(897, 218)
+
+[node name="SnowPlatform21" parent="Platform" unique_id=888031776 instance=ExtResource("5_7qf7k")]
+position = Vector2(1116, 218)
+
+[node name="SnowPlatform22" parent="Platform" unique_id=59515780 instance=ExtResource("5_7qf7k")]
+position = Vector2(1043, 218)
+
+[node name="SnowPlatform23" parent="Platform" unique_id=2009232216 instance=ExtResource("5_7qf7k")]
+position = Vector2(970, 218)
+
+[node name="SnowPlatform24" parent="Platform" unique_id=1778920123 instance=ExtResource("5_7qf7k")]
+position = Vector2(824, 218)
+
+[node name="SnowPlatform25" parent="Platform" unique_id=1946923894 instance=ExtResource("5_7qf7k")]
+position = Vector2(751, 218)
+
+[node name="SnowPlatform26" parent="Platform" unique_id=390758590 instance=ExtResource("5_7qf7k")]
+position = Vector2(678, 218)
+
+[node name="Label" type="Label" parent="." unique_id=1246246307]
+offset_left = 336.0
+offset_top = 297.0
+offset_right = 768.0
+offset_bottom = 320.0
+label_settings = SubResource("LabelSettings_jsrw5")
+horizontal_alignment = 1
+
+[node name="Border" type="Node2D" parent="." unique_id=1435959601]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Border" unique_id=438966404]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D" unique_id=370394583]
+shape = SubResource("SegmentShape2D_nufku")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Border/StaticBody2D" unique_id=1881629770]
+position = Vector2(1156, 0)
+shape = SubResource("SegmentShape2D_nufku")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Border/StaticBody2D" unique_id=2023047592]
+position = Vector2(0, -5)
+shape = SubResource("SegmentShape2D_dabvo")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Border/StaticBody2D" unique_id=669976325]
+position = Vector2(-7, 636)
+shape = SubResource("SegmentShape2D_dabvo")
+
+[node name="Meteor" parent="." unique_id=575263210 instance=ExtResource("6_7qf7k")]
+position = Vector2(-68, 325)
+script = ExtResource("7_av4th")
+
+[node name="MeteorTrig" type="Area2D" parent="." unique_id=1455076074]
+script = ExtResource("8_crcml")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeteorTrig" unique_id=246330951]
+position = Vector2(359, 321)
+shape = SubResource("RectangleShape2D_av4th")
+
+[connection signal="body_entered" from="ObjectiveArea" to="ObjectiveArea" method="_on_body_entered"]
+[connection signal="body_entered" from="Meteor" to="Meteor" method="_on_body_entered"]
+[connection signal="body_entered" from="MeteorTrig" to="MeteorTrig" method="_on_body_entered"]
